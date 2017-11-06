@@ -13,20 +13,9 @@ import java.util.Map;
  * Created by slee8 on 11/3/17.
  */
 public class YfBolt extends BaseBasicBolt {
-    private PrintWriter writer;
 
     @Override
-    public void prepare(Map stormConf, TopologyContext context) {
-        String fileName = stormConf.get("fileToWrite").toString();
-
-        try  {
-            this.writer = new PrintWriter(fileName, "UTF-8");
-
-        } catch(Exception e) {
-            throw new RuntimeException("Error opening fiel [" + fileName + "]");
-        }
-
-    }
+    public void prepare(Map stormConf, TopologyContext context) {}
 
     @Override
     public final void execute(Tuple tuple, BasicOutputCollector basicOutputCollector) {
@@ -43,17 +32,13 @@ public class YfBolt extends BaseBasicBolt {
         }
 
         basicOutputCollector.emit(new Values(symbol, timestamp, price, gain));
-        writer.println(symbol + "," + timestamp + "," + price + "," + gain);
     }
 
     @Override
     public void declareOutputFields(OutputFieldsDeclarer outputFieldsDeclarer) {
         outputFieldsDeclarer.declare(new Fields("company", "timestamp", "price", "gain"));
-
     }
 
     @Override
-    public void cleanup() {
-        writer.close();
-    }
+    public void cleanup() {}
 }

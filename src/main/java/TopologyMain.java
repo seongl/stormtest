@@ -1,5 +1,6 @@
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
+import org.apache.storm.StormSubmitter;
 import org.apache.storm.generated.StormTopology;
 import org.apache.storm.topology.TopologyBuilder;
 
@@ -11,7 +12,7 @@ public class TopologyMain {
         // Build Topology
         TopologyBuilder builder = new TopologyBuilder();
         builder.setSpout("Yahoo-Finance-Spout", new YfSpout());
-        builder.setBolt("Yahoo-Finance-Bolt", new YfBolt())
+        builder.setBolt("Yahoo-Finance-Bolt", new YfBolt(), 3)
                 .shuffleGrouping("Yahoo-Finance-Spout");
 
         StormTopology topology = builder.createTopology();
@@ -21,13 +22,12 @@ public class TopologyMain {
         config.setDebug(true);
         config.put("filetoWrite", "/Users/slee8/Downloads/output.txt");
 
-
-
         // Submit Topology to cluster
          LocalCluster cluster = new LocalCluster();
         try {
-            cluster.submitTopology("Stock-Tracker-Topology", config, topology);
-            Thread.sleep(1000);
+//            cluster.submitTopology("Stock-Tracker-Topology", config, topology);
+            StormSubmitter.submitTopology("Parallelized-Topology", config, topology);
+//            Thread.sleep(1000);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
