@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa66953a-e24b-4713-9ce6-3a5d56569bd4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/wordcount/WordCounter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/TopologyMain.java" afterPath="$PROJECT_DIR$/src/main/java/basic/TopologyMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/WordReader.java" afterPath="$PROJECT_DIR$/src/main/java/wordcount/WordReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/YfBolt.java" afterPath="$PROJECT_DIR$/src/main/java/basic/YfBolt.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/YfSpout.java" afterPath="$PROJECT_DIR$/src/main/java/basic/YfSpout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/TopologyMain.class" afterPath="$PROJECT_DIR$/target/classes/TopologyMain.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/YfBolt.class" afterPath="$PROJECT_DIR$/target/classes/YfBolt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stormtest-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/stormtest-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stormtest.iml" afterPath="$PROJECT_DIR$/stormtest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wordcount/TopologyMain.java" afterPath="$PROJECT_DIR$/src/main/java/wordcount/TopologyMain.java" />
     </list>
     <ignored path="stormtest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,8 +110,8 @@
       <file leaf-file-name="TopologyMain.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wordcount/TopologyMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state relative-caret-position="495">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -730,7 +720,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1200" width="1920" height="1200" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -741,7 +731,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48141593" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48141593" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08839191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1007,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wordcount/TopologyMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        <state relative-caret-position="495">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
