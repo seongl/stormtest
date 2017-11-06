@@ -13,7 +13,8 @@ public class TopologyMain {
         TopologyBuilder builder = new TopologyBuilder();
         builder.setSpout("word-reader", new WordReader());
         builder.setBolt("word-counter", new WordCounter(), 2)
-                .fieldsGrouping("word-reader", new Fields("word"));
+                .allGrouping("word-reader");
+//                .fieldsGrouping("word-reader", new Fields("word"));
 //                .shuffleGrouping("word-reader");
 
         Config conf = new Config();
