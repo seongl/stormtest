@@ -4,6 +4,7 @@ import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
 import org.apache.storm.StormSubmitter;
 import org.apache.storm.trident.TridentTopology;
+import org.apache.storm.trident.operation.builtin.Count;
 import org.apache.storm.trident.operation.builtin.Debug;
 import org.apache.storm.tuple.Fields;
 import wordcount.WordReader;
@@ -19,7 +20,15 @@ public class HelloWorldTrident {
                 .each(new Fields("word"),
                         new SplitFunction(),
                         new Fields("word_split"))
-                .each(new Fields("word_split"), new Debug());
+                .groupBy(new Fields("word_split"))
+                .aggregate(new Count(), new Fields("count"));
+
+// 22222222222222222222
+//                .aggregate(new Count(), new Fields("count"))
+//                .each(new Fields("count"), new Debug());
+
+// 1111111111111111111111
+//                .each(new Fields("word_split"), new Debug());
 
         Config conf = new Config();
         conf.setDebug(true);
