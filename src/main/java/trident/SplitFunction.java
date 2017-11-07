@@ -3,7 +3,6 @@ package trident;
 import org.apache.storm.trident.operation.TridentCollector;
 import org.apache.storm.trident.tuple.TridentTuple;
 import org.apache.storm.tuple.Values;
-import org.mozilla.javascript.BaseFunction;
 
 /**
  * Created by slee8 on 11/6/17.
