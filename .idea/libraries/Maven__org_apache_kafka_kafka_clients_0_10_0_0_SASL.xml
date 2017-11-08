@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.apache.kafka:kafka-clients:0.10.0.0-SASL">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.0.0-SASL/kafka-clients-0.10.0.0-SASL.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.0.0-SASL/kafka-clients-0.10.0.0-SASL-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.0.0-SASL/kafka-clients-0.10.0.0-SASL-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
